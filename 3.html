@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>close-range view</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+		<nav>
+			
+				<div class="container">
+		  <div class="link">
+		    <div class="text"><a href="1.html">distant view</a></div>
+		  </div>
+		  <div class="link">
+		    <div class="text"><a href="2.html">middle distance view</a></div>
+		  </div>
+		  <div class="link">
+		    <div class="text"><a href="3.html">close-range view</a></div>
+		  </div>
+		  <div class="link">
+		    <div class="text"><a href="4.html">about space debris</a></div>
+		  </div>
+
+		</div>
+
+		</div>
+
+
+		  <script type="text/javascript">
+		  	
+		  	var links = document.getElementsByClassName('link')
+			for(var i = 0; i <= links.length; i++)
+			   addClass(i)
+
+
+			function addClass(id){
+		   setTimeout(function(){
+		      if(id > 0) links[id-1].classList.remove('hover')
+		      links[id].classList.add('hover')
+		   }, id*750) 
+		}
+
+
+
+
+		  </script>
+
+
+
+
+
+		</nav>
+
+
+
+
+
+
+<!-- partial:index.partial.html -->
+<canvas id="triangle-lost-in-space" resize="true"></canvas>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.18/paper-full.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
